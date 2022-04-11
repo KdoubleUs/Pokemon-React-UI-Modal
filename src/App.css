@@ -30,6 +30,7 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* .modal {
@@ -63,4 +64,21 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modalStorage {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  color: bisque;
+  padding: 10px;
+}
+.pokemonTitle {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
 }

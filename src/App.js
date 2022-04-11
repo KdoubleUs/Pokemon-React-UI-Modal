@@ -9,12 +9,20 @@ import Button from "react-bootstrap/Button";
 import MyVerticallyCenteredModal from "./components/modal2";
 import TestContainer from "./components/ModalContainer";
 import FetchApi from "./components/api";
+import titleImg from "./pokemon.svg.png";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [modalShow, setModalShow] = React.useState(false); //
   return (
     <div>
       <Nav />
+      <img
+        src={titleImg}
+        alt="none"
+        className="pokemonTitle"
+        height={100}
+        width={300}
+      />
 
       <TestModal />
 

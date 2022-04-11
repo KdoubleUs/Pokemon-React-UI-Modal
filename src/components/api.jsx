@@ -16,11 +16,12 @@ function FetchApi(props) {
   useEffect(() => {
     getData();
   }, []);
+
   return (
     <div>
       <div>
         {data.map(datas => (
-          <div key={datas.id}>
+          <div key={datas.id} className="modalStorage">
             <img
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${props.id}.png`}
               alt="none"
@@ -30,7 +31,15 @@ function FetchApi(props) {
             />
             <div className="textContainer">
               <h1>{datas.name}</h1>
-              <p>TEXT TESTING</p>
+              <p>{datas.types[0].type.name}</p>
+              {/* <p>{datas ? datas.types[1].type.name : null}</p> */}
+              {/* <p>
+                {() => {
+                  if (datas.types[1].type.name != null) {
+                    return datas.types[1].type.name;
+                  }
+                }}
+              </p> */}
             </div>
           </div>
         ))}
