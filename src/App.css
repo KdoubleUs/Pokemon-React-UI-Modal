@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.navBar {
+  background-color: grey;
+  height: 5em;
+}
+.title {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.boxy {
+  height: 300px;
+  width: 300px;
+  background-color: lightblue;
+  border-style: solid;
+  margin: 20px;
+}
+h3 {
+  color: white;
+}
+.setOfModal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.blackLay {
+  background-color: black;
+}
+.modal {
+  position: relative;
+  left: 50%;
+}
+
+.mainContainer {
+  height: 300px;
+  width: 300px;
+  background-color: bisque;
+  margin: 20px;
+}
+
+.mainContainer:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
+.pokemonIMG {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
